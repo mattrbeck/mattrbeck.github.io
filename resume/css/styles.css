@@ -16,9 +16,9 @@ body {
 
 .resume {
     background: #FFFFFF;
-    border: transparent solid .75in;
-    width: 7in;
-    height: 9.5in;
+    border: transparent solid .5in;
+    width: 7.5in;
+    height: 10in;
     overflow: hidden;
     margin: 40px auto;
     outline: 1px solid #CCCCCC;
@@ -83,6 +83,22 @@ hr {
 .projects .element .description > p::before {
     content: "\2022  ";
     opacity: .8;
+}
+
+.experience > .element {
+    margin-bottom: 8px;
+}
+
+.experience > .element > h3 {
+    display: inline;
+}
+
+.experience > .element > h3 + i {
+    display: inline;
+}
+
+.experience > .element > h3 + i::before {
+    content: " - ";
 }
 
 #print-button {
