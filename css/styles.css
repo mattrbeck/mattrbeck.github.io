@@ -103,11 +103,13 @@ body {
   opacity: .5;
 }
 
-#logo {
+.logo img {
   width: 30px;
   height: 30px;
 
-  fill: #4957BB;
+  /* fill: #4957BB; */
+  /* https://codepen.io/sosuke/pen/Pjoqqp */
+  filter: invert(32%) sepia(56%) saturate(1172%) hue-rotate(203deg) brightness(91%) contrast(88%);
 
   display: block;
   margin: 0 auto;
@@ -138,6 +140,12 @@ body {
   margin: auto;
 }
 
+.social-links img {
+  width: 20px;
+  height: 20px;
+  margin: 0 auto;
+}
+
 .gh-logo span {
   background-color: #4675DF;
 }
@@ -153,13 +161,6 @@ body {
 .kb-logo span {
   background-color: #369CFB;
   background-color: #FF6E32;
-}
-
-#gh-svg, #tw-svg, #fb-svg, #kb-svg {
-  width: 20px;
-  height: 20px;
-
-  margin: 0 auto;
 }
 
 .projects {
@@ -181,6 +182,7 @@ body {
 
 .projects-inner {
   display: flex;
+  flex-flow: row wrap;
   -webkit-flex-flow: row wrap;
   justify-content: space-around;
   height: fit-content;
@@ -277,7 +279,7 @@ body {
     font-size: 12px;
   }
 
-  #logo {
+  .logo img {
     width: 24px;
     height: 24px;
   }
@@ -293,7 +295,7 @@ body {
     border-radius: 15px;
   }
 
-  #gh-svg, #tw-svg, #fb-svg, #kb-svg {
+  .social-links img {
     width: 15px;
   }
 
