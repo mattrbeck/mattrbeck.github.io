@@ -9,7 +9,7 @@
         <div class="resume">
             <div class="header">
                 <h1 class="full-name center">Matthew Berry</h1>
-                <p class="center">415-940-0084 | me@mattrb.com</p>
+                <p class="center"><a href="tel:415-940-0084">415-940-0084</a> | <a href="mailto:me@mattrb.com">me@mattrb.com</a></p>
                 <p class="center"><a href="https://mattrb.com">mattrb.com</a> | <a href="https://github.com/mattrberry">github.com/mattrberry</a> | <a href="https://www.linkedin.com/in/matthew-berry/">linkedin.com/in/matthew-berry</a></p>
             </div>
             <br>
@@ -18,11 +18,8 @@
                 <div class="element">
                     <h3>Northeastern University<span class="right">September 2016 - May 2020</span></h3>
                     <div class="description">
-                        <p>Khoury College of Computer Science - 3.7/4.0 GPA</p>
-                        <p id="relevant-courses">Relevant Courses:</p>
-                        <div class="description">
-                            <p>Software Development, Networks & Distributed Systems, Algorithms, OOD, Systems</p>
-                        </div>
+                        <p>B.S. in Computer Science from Khoury College of Computer Science - 3.7/4.0 GPA</p>
+                        <p>Courses: Compilers, Software Development, Networks & Distributed Systems, Algorithms, OOD, Systems</p>
                     </div>
                 </div>
             </div>
@@ -32,88 +29,103 @@
                 <div class="element">
                     <h3 id="languages">Languages</h3>
                     <div class="description">
-                        <p>Proficient: Java, Python, Crystal, HTML5, CSS3, JavaScript, SQL</p>
-                        <p>Familiar: Bash, Ruby, Rust, C</p>
+                        <p>Proficient: Java, Python, Crystal, Bash, Nim, HTML5, CSS3, JavaScript, TypeScript, SQL</p>
+                        <p>Familiar: Ruby, Rust, C, C++, Swift, OCaml, Racket, Haskell</p>
                     </div>
                 </div>
                 <div class="element">
                     <h3 id="technologies">Technologies</h3>
                     <div class="description">
-                        <p>Git, Spring, Flask, Docker, Linux, Protobuf, React, Redux, Vue, jQuery, Jenkins</p>
+                        <p>AWS, Git, Spring, Flask, Docker, Linux, Vue, React, Redux, jQuery, Jenkins, SDL, Dear ImGui</p>
                     </div>
                 </div>
             </div>
             <hr>
             <div class="section experience">
                 <h3>Experience</h3>
-                <div class="element">
-                    <h3>Amazon<span class="right">June 2019 - August 2019</span></h3>
-                    <i>Software Development Engineer Intern</i>
-                    <div class="description">
-                        <p>Worked across teams to implement a standard, reusable method of logging metrics in an internal tool</p>
-                        <p>Designed and built a GUI to cleanly present this data to developers, PMs, and UX designers alike</p>
-                        <p>Conducted design reviews to improve everything from UI design to project architecture and implementation</p>
-                        <p>Wrote SQL queries to efficiently collect data from complex schemas</p>
-                        <i>Technologies used: Java, Spring, JavaScript, React, Redshift, AWS</i>
+                <div class="work">
+                    <h3>Amazon</h3>
+                    <div class="detail">
+                        <i class="title">Software Development Engineer @ Amazon Music, New Venture</i>
+                        <p class="dates">April 2021 - February 2022</p>
+                        <div class="points">
+                            <p>Designed and built a Flink streaming service to measure client experience in real time</p>
+                            <p>Created a robust testing tool to exercise this service across local, dev, and beta stages without the need for clients</p>
+                            <p>Developed a tool to validate client event patterns, tracking improvements and alerting on regressions</p>
+                            <p>Currently working to improve playback experience, performance, and monitorability of our Swift iOS app</p>
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <i class="title">Software Development Engineer @ Prime Video</i>
+                        <p class="dates">August 2020 - April 2021</p>
+                        <div class="points">
+                            <p>Took ownership of myriad issues in the Prime Video catalog, driving them to resolution</p>
+                            <p>Orchestrated solutions across teams to patch historical catalog data without disrupting customer experience</p>
+                            <p>Proactively introduced simplifiers in the catalog to improve developer experience and eliminate bugs</p>
+                            <p>Led investigations into large-scale data discrepancies across the entire catalog organization</p>
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <i class="title">Software Development Engineer Intern @ Worldwide Consumer</i>
+                        <p class="dates">June 2019 - August 2019</p>
+                        <div class="points">
+                            <p>Worked across teams to implement a standard, reusable method of recording interaction with React components</p>
+                            <p>Designed and built a GUI to cleanly present these interactions to developers, PMs, and UX designers alike</p>
+                            <p>Conducted design reviews to improve everything from UI design to project architecture and implementation</p>
+                            <p>Wrote SQL queries to efficiently collect data from complex schemas</p>
+                        </div>
                     </div>
                 </div>
-                <div class="element">
-                    <h3>TripAdvisor<span class="right">January 2019 - May 2019</span></h3>
-                    <i>Security Operations Co-op</i>
-                    <div class="description">
-                        <p>Created web tools to investigate security anomalies</p>
-                        <p>Consumed and processed data streams to detect real-time security anomalies</p>
-                        <p>Designed automated flows to handle and gather information on security anomalies</p>
-                        <p>Migrated existing RabbitMQ producers and consumers to Kafka, doubling message throughput</p>
-                        <p>Interfaced with modern security tools including SecurityCenter, TruSTAR, and CrowdStrike Falcon</p>
-                        <i>Technologies used: Python, Tornado, JavaScript, Kubernetes, PostgreSQL, RabbitMQ, Kafka</i>
+                <div class="work single">
+                    <h3>TripAdvisor</h3>
+                    <div class="detail">
+                        <i class="title">Security Operations Co-op</i>
+                        <p class="dates">January 2019 - May 2019</p>
+                        <div class="points">
+                            <p>Consumed and processed data streams to detect, decorate, and categorize real-time security anomalies</p>
+                            <p>Migrated existing RabbitMQ producers and consumers to Kafka, doubling message throughput</p>
+                            <p>Created web tools to enable our SOC analyst to more effectively investigate security anomalies</p>
+                            <p>Worked with modern security tools including SecurityCenter, TruSTAR, and CrowdStrike Falcon</p>
+                        </div>
                     </div>
                 </div>
-                <div class="element">
-                    <h3>Quick Base<span class="right">January 2018 - August 2018</span></h3>
-                    <i>Software Engineering Co-op</i>
-                    <div class="description">
-                        <p>Worked on a team in an agile kanban environment, shipping impactful features quickly and reliably</p>
-                        <p>Created a new scalable microservice to separate specialized functionality from an existing codebase</p>
-                        <p>Built APIs with modern technologies including Spring Framework and Apache Tomcat</p>
-                        <p>Designed graphical web interfaces for those APIs with React and Redux</p>
-                        <p>Rearchitected communication between services to allow for asynchronous behavior</p>
-                        <i>Technologies used: Java, Spring, JavaScript, React, Redux, Docker, PostgreSQL, AWS, Tomcat</i>
-                    </div>
-                </div>
-                <div class="element">
-                    <h3>Northeastern University<span class="right">September 2017 - December 2017</span></h3>
-                    <i>Tutor of Computer Science Fundamentals 2</i>
-                    <div class="description">
-                        <p>Hosted office hours teaching first-year students the object-oriented programming paradigm</p>
-                        <p>Taught students at weekly labs and graded programming assignments</p>
-                    </div>
-                </div>
-                <div class="element">
-                    <h3>MVCode<span class="right">September 2015 - August 2017</span></h3>
-                    <i>Coding Instructor</i>
-                    <div class="description">
-                        <p>Taught students in 1st - 10th grade basic coding concepts and applications of those concepts</p>
-                        <p>Instructed groups of about 15 students at weekly summer camps</p>
+                <div class="work single">
+                    <h3>Quick Base</h3>
+                    <div class="detail">
+                        <i class="title">Software Engineering Co-op</i>
+                        <p class="dates">January 2018 - August 2018</p>
+                        <div class="points">
+                            <p>Created a scalable dockerized microservice to separate specialized functionality from an existing codebase</p>
+                            <p>Built APIs with common backend web technologies including Spring Framework and Apache Tomcat</p>
+                            <p>Designed intuitive graphical web interfaces for those APIs with React and Redux</p>
+                            <p>Rearchitected communication between services to allow for asynchronous behavior and updates via websockets</p>
+                        </div>
                     </div>
                 </div>
             </div>
             <hr>
             <div class="section projects">
                 <h3>Personal Projects</h3>
-                <div class="element">
-                    <h3>crab <span class="normal-weight">- <a href="https://github.com/mattrberry/crab">github.com/mattrberry/crab</a></span><span class="right">May 2020 - Present</span></h3>
-                    <div class="description">
-                        <p>Building a Game Boy (Color) (Advance) emulator with a focus on accuracy and readability
-                        <p>Supports cycle-accurate Game Boy graphics emulation and audio featuring many emulated hardware quirks</p>
-                        <i>Technologies used: Crystal Lang, SDL (Simple DirectMedia Layer)</i>
+                <div class="work single">
+                    <h3>crab</h3>
+                    <div class="detail">
+                        <a class="title" href="https://github.com/mattrberry/crab">github.com/mattrberry/crab</a>
+                        <p class="dates">May 2020 - Present</p>
+                        <div class="points">
+                            <p>Building a Game Boy (Color) (Advance) emulator with a focus on accuracy and readability</p>
+                            <p>Supports cycle-accurate Game Boy graphics emulation and audio featuring many emulated hardware quirks</p>
+                            <p>Uses OpenGL shaders to reproduce display color profiles from both of the consoles</p>
+                            <p>Builds on both Linux and macOS with regression testing and releases managed in Github Actions</p>
+                        </div>
                     </div>
                 </div>
-                <div class="element">
-                    <h3>csgoSkinStatistics <span class="normal-weight">- <a href="https://github.com/mattrberry/csgoSkinStatistics">github.com/mattrberry/csgoSkinStatistics</a></span><span class="right">April 2016 - Present</span></h3>
-                    <div class="description">
-                        <p>Designed an application to query CSGO's game coordinator and display information about in-game items through a website</p>
-                        <i>Technologies used: Flask, Python, HTML, CSS, JavaScript</i>
+                <div class="work single">
+                    <h3>csgoSkinStatistics</h3>
+                    <div class="detail">
+                        <a class="title" href="https://github.com/mattrberry/csgoSkinStatistics">github.com/mattrberry/csgoSkinStatistics</a>                        <p class="dates">April 2016 - Present</p>
+                        <div class="points">
+                            <p>Designed an application to query CSGO's game coordinator and display information about in-game items through a website</p>
+                        </div>
                     </div>
                 </div>
             </div>

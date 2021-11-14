@@ -7,7 +7,7 @@ html, body, div, h1, h3, p, i, b, a {
     margin: 0;
     padding: 0;
     font-family: "Times New Roman", Times, serif;
-    line-height: 1.23em;
+    line-height: 1.2em;
 }
 
 body {
@@ -16,7 +16,7 @@ body {
 
 .resume {
     background: #FFFFFF;
-    border: transparent solid .5in;
+    border: transparent solid 0.5in;
     width: 7.5in;
     height: 10in;
     overflow: hidden;
@@ -38,25 +38,9 @@ a, a:visited {
     color: #2A5DB0;
 }
 
-.element, .description, .indented {
-    margin-left: .25in;
+hr {
+    margin-bottom: 0.4em;
 }
-
-#languages, #technologies, #relevant-courses {
-    vertical-align: top;
-    display: inline-block;
-    position: absolute;
-}
-
-#relevant-courses + .description {
-    margin-left: 1.15in;
-}
-
-#languages + .description, #technologies + .description {
-    margin-left: 1.4in;
-    display: inline-block;
-}
-
 
 .right {
     float: right;
@@ -67,38 +51,51 @@ a, a:visited {
     text-align: center;
 }
 
-.normal-weight {
+.element, .description, .work, .work > .detail > .points {
+    margin-left: 0.25in; /* Base indent spacing. */
+}
+
+#languages, #technologies {
+    position: absolute; /* Allow the descriptions to be set to the right. */
+}
+
+.knowledge .description {
+    margin-left: 1in; /* Set the descriptions to the right of the skill types. */
+}
+
+.work, .detail {
+    margin-bottom: 0.1in; /* Spacing between each detail block. */
+}
+
+.detail > .dates {
+    float: right;
+}
+
+.detail > .points > p {
+    text-indent: -0.1in; /* Dedent the first line to offset bullet point. */
+    padding-left: 0.1in; /* Indent the whole block to realign. */
+}
+
+.detail > .points > p::before {
+    content: "\2022  "; /* Add a bullet point before the item. */
+    opacity: 0.8; /* Reduce the visual weight of the bullet point. */
+}
+
+.work.single > h3 {
+    display: inline;
+}
+
+.work.single > h3::after {
+    content: " - ";
     font-weight: normal;
 }
 
-hr {
-    margin-bottom: .4em;
-}
-
-.experience .element .description > p::before {
-    content: "\2022  ";
-    opacity: .8;
-}
-
-.projects .element .description > p::before {
-    content: "\2022  ";
-    opacity: .8;
-}
-
-.experience > .element {
-    margin-bottom: 8px;
-}
-
-.experience > .element > h3 {
+.work.single > .detail {
     display: inline;
 }
 
-.experience > .element > h3 + i {
-    display: inline;
-}
-
-.experience > .element > h3 + i::before {
-    content: " - ";
+.work:not(.single) > .detail, .work:not(.single) > .detail > .points {
+    margin-left: 0.125in; /* Indent detail and its points each only a half-step. */
 }
 
 #print-button {
@@ -151,23 +148,21 @@ hr {
         outline: none;
     }
 
-    .description p:not(.indented)::before {
-        content: '\2022  ';
+    .description > p {
+        text-indent: -0.1in; /* Dedent the first line to offset bullet point. */
+        padding-left: 0.1in; /* Indent the whole block to realign. */
     }
 
-    #relevant-courses + .description p {
-        display: inline;
-    }
-
-    #relevant-courses + .description p:nth-child(2)::before {
-        content: '';
+    .description > p::before {
+        content: '\2022  '; /* Add bullet points to remaining descriptions since lines wrap */
     }
     
-    #languages, #technologies, #relevant-courses {
-        position: relative;
+    #languages, #technologies {
+        position: relative; /* Flow points under titles on mobile. */
     }
-    #languages + .description, #technologies + .description, #relevant-courses + .description {
-        margin-left: .25in;
+
+    .knowledge .description {
+        margin-left: 0.25in; /* To reset the wide margin used on the standard view. */
     }
 
     #print-button {
