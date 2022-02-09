@@ -222,16 +222,11 @@ body {
 }
 
 .footer-text {
-  padding: 30px;
+  padding: 35px 30px;
 
   color: #FFF;
   font-size: 15px;
   opacity: .5;
-  line-height:17px;
-}
-
-.footer span {
-  display: block;
 }
 
 @media (max-width: 1100px) {
@@ -301,10 +296,5 @@ body {
 
   .footer-text {
     padding: 20px;
-
-    color: #FFF;
-    font-size: 12px;
-    opacity: .5;
-    line-height:14px;
   }
 }
