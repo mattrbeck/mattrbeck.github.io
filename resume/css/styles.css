@@ -42,6 +42,10 @@ hr {
     margin-bottom: 0.4em;
 }
 
+#maiden {
+    font-size: inherit;
+}
+
 .right {
     float: right;
     font-weight: normal;
@@ -185,7 +189,7 @@ hr {
         color: #000000;
     }
 
-    #print-button {
+    #print-button, #maiden {
         display: none;
     }
 }
