@@ -185,10 +185,6 @@ hr {
         outline: none;
     }
 
-    a, a:visited {
-        color: #000000;
-    }
-
     #print-button, #maiden {
         display: none;
     }
