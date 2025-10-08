@@ -19,7 +19,7 @@ time, mark, audio, video {
 /**/
 
 body {
-  background: #EEF2F5;
+  background: #DEDBD2;
 
   font-family: 'Nunito', sans-serif;
 
@@ -37,25 +37,42 @@ body {
 
 .slide-1 {
   margin: 0 auto;
-  border-radius: 10px;
+  border-radius: 12px;
 
-  background: #4957B8;
+  background: #4A5759;
 
   min-height: 400px;
   max-width: 1000px;
 
-  background-image: url(../img/dot.svg);
+  background-image: url(../img/topographic.svg);
+  background-size: 200px 200px;
 
   display: flex;
   align-items: center;
   flex-direction: column;
 
-  box-shadow: 0px 0px 15px 0 rgba(79,90,166,.35);
+  box-shadow: 0px 4px 24px 0 rgba(74,87,89,.45);
+  position: relative;
 }
 
 .header {
   width: 100%;
   height: fit-content;
+  position: relative;
+}
+
+.header::after {
+  content: '';
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background-image: url(../img/waves.svg);
+  background-repeat: repeat-x;
+  background-size: 100px 40px;
+  opacity: 0.3;
+  pointer-events: none;
 }
 
 .header-inner {
@@ -78,11 +95,14 @@ body {
   width: 50px;
   height: 50px;
   background-size: 50px;
-  background-color: #fff;
-  border-radius: 10px;
+  background-color: #F7E1D7;
+  border-radius: 12px 14px 13px 11px / 11px 13px 12px 14px;
 
   display: flex;
   align-items: center;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+  animation: morph-logo 16s ease-in-out infinite;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .logo-text {
@@ -107,9 +127,9 @@ body {
   width: 30px;
   height: 30px;
 
-  /* fill: #4957BB; */
+  /* fill: #4A5759; */
   /* https://codepen.io/sosuke/pen/Pjoqqp */
-  filter: invert(32%) sepia(56%) saturate(1172%) hue-rotate(203deg) brightness(91%) contrast(88%);
+  filter: invert(32%) sepia(5%) saturate(1146%) hue-rotate(140deg) brightness(97%) contrast(90%);
 
   display: block;
   margin: 0 auto;
@@ -129,55 +149,175 @@ body {
 }
 
 .social-links span {
-  width: 40px;
-  height: 40px;
-  background-size: 40px;
-  border-radius: 20px;
+  width: 44px;
+  height: 44px;
+  background-size: 44px;
 
   display: flex;
   align-items: center;
 
   margin: auto;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.social-links span:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
 }
 
 .social-links img {
   width: 20px;
   height: 20px;
   margin: 0 auto;
+  filter: invert(100%) brightness(100%);
+}
+
+/* Organic shape morphing animations */
+@keyframes morph-logo {
+  0%, 100% {
+    border-radius: 12px 14px 13px 11px / 11px 13px 12px 14px;
+  }
+  25% {
+    border-radius: 13px 11px 14px 12px / 12px 14px 11px 13px;
+  }
+  50% {
+    border-radius: 14px 12px 11px 13px / 13px 11px 14px 12px;
+  }
+  75% {
+    border-radius: 11px 13px 12px 14px / 14px 12px 13px 11px;
+  }
+}
+
+@keyframes morph-blob-1 {
+  0%, 100% {
+    border-radius: 55% 45% 60% 40% / 50% 55% 45% 50%;
+  }
+  25% {
+    border-radius: 45% 55% 50% 50% / 55% 40% 60% 45%;
+  }
+  50% {
+    border-radius: 50% 50% 45% 55% / 45% 60% 40% 55%;
+  }
+  75% {
+    border-radius: 60% 40% 55% 45% / 50% 45% 55% 50%;
+  }
+}
+
+@keyframes morph-blob-2 {
+  0%, 100% {
+    border-radius: 40% 60% 50% 50% / 55% 50% 50% 45%;
+  }
+  25% {
+    border-radius: 50% 50% 60% 40% / 45% 55% 45% 55%;
+  }
+  50% {
+    border-radius: 55% 45% 45% 55% / 50% 50% 50% 50%;
+  }
+  75% {
+    border-radius: 45% 55% 50% 50% / 60% 40% 60% 40%;
+  }
+}
+
+@keyframes morph-blob-3 {
+  0%, 100% {
+    border-radius: 50% 50% 55% 45% / 60% 45% 55% 40%;
+  }
+  25% {
+    border-radius: 60% 40% 45% 55% / 50% 60% 40% 50%;
+  }
+  50% {
+    border-radius: 45% 55% 50% 50% / 45% 50% 55% 50%;
+  }
+  75% {
+    border-radius: 50% 50% 40% 60% / 55% 45% 50% 55%;
+  }
+}
+
+@keyframes morph-blob-4 {
+  0%, 100% {
+    border-radius: 45% 55% 45% 55% / 50% 60% 40% 50%;
+  }
+  25% {
+    border-radius: 55% 45% 60% 40% / 55% 45% 55% 45%;
+  }
+  50% {
+    border-radius: 50% 50% 50% 50% / 60% 40% 60% 40%;
+  }
+  75% {
+    border-radius: 40% 60% 55% 45% / 45% 55% 45% 55%;
+  }
 }
 
 .gh-logo span {
-  background-color: #4675DF;
+  background-color: #8FA892;
+  border-radius: 55% 45% 60% 40% / 50% 55% 45% 50%;
+  animation: morph-blob-1 12s ease-in-out infinite;
 }
 
 .tw-logo span {
-  background-color: #63ADE8;
+  background-color: #E0919D;
+  border-radius: 40% 60% 50% 50% / 55% 50% 50% 45%;
+  animation: morph-blob-2 15s ease-in-out infinite;
 }
 
 .resume-logo span {
-  background-color: #78D4B6;
+  background-color: #E8C3B2;
+  border-radius: 50% 50% 55% 45% / 60% 45% 55% 40%;
+  animation: morph-blob-3 18s ease-in-out infinite;
 }
 
 .kb-logo span {
-  background-color: #369CFB;
-  background-color: #FF6E32;
+  background-color: #C5C2B9;
+  border-radius: 45% 55% 45% 55% / 50% 60% 40% 50%;
+  animation: morph-blob-4 14s ease-in-out infinite;
 }
 
 .projects {
   width: 1080px;
-  border-radius: 10px;
+  border-radius: 12px;
 
   padding: 0;
   margin: 0;
 
-  color: #49555F;
-  background: #FFFFFF;
+  color: #4A5759;
+  background: #F7E1D7;
 
   text-align: center;
 
-  box-shadow: 0px 0px 20px 0 rgba(72,89,102,.25);
+  box-shadow: 0px 4px 24px 0 rgba(74,87,89,.2);
 
   position: relative;
+  overflow: hidden;
+}
+
+.projects::before {
+  content: '';
+  position: absolute;
+  top: -100px;
+  right: -100px;
+  width: 300px;
+  height: 300px;
+  background-image: url(../img/organic-blob.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.projects::after {
+  content: '';
+  position: absolute;
+  bottom: -80px;
+  left: -80px;
+  width: 250px;
+  height: 250px;
+  background-image: url(../img/organic-blob.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.4;
+  transform: rotate(180deg);
+  pointer-events: none;
 }
 
 .projects-inner {
@@ -195,12 +335,16 @@ body {
   padding: 15px;
   vertical-align: middle;
   line-height: 18px;
+  position: relative;
+  z-index: 1;
 }
 
 .projects div h4 {
   font-size: 22px;
-
+  font-weight: 600;
   padding: 15px;
+  position: relative;
+  z-index: 1;
 }
 
 .projects div h5 {
@@ -208,17 +352,35 @@ body {
 }
 
 .projects-inner p {
-  color: #70808D;
+  color: #4A5759;
+  opacity: 0.75;
   font-size: 15px;
 }
 
 .projects-inner a {
   text-decoration: none;
-  color: #4957B8;
+  color: #4A5759;
+  font-weight: 600;
 }
 
 .footer {
   width: 100%;
+  position: relative;
+}
+
+.footer::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 120px;
+  background-image: url(../img/mountains.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  opacity: 0.4;
+  pointer-events: none;
 }
 
 .footer-text {
@@ -227,6 +389,8 @@ body {
   color: #FFF;
   font-size: 15px;
   opacity: .5;
+  position: relative;
+  z-index: 1;
 }
 
 @media (max-width: 1100px) {
@@ -284,10 +448,9 @@ body {
   }
 
   .social-links span {
-    width: 30px;
-    height: 30px;
-    background-size: 30px;
-    border-radius: 15px;
+    width: 36px;
+    height: 36px;
+    background-size: 36px;
   }
 
   .social-links img {

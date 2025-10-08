@@ -1,0 +1,21 @@
+<svg width="400" height="400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <!-- Organic blob shape inspired by natural forms -->
+  <path d="M 200 50
+           C 280 50, 350 100, 350 180
+           C 350 220, 330 260, 280 290
+           C 240 315, 200 320, 160 310
+           C 110 295, 70 260, 55 210
+           C 40 160, 50 110, 100 75
+           C 140 50, 170 50, 200 50 Z"
+        fill="rgba(237, 175, 184, 0.2)"
+        stroke="rgba(237, 175, 184, 0.3)"
+        stroke-width="2"/>
+
+  <!-- Secondary smaller blob -->
+  <path d="M 280 180
+           C 320 180, 340 210, 335 240
+           C 330 270, 300 285, 270 280
+           C 240 275, 220 250, 225 220
+           C 230 190, 250 180, 280 180 Z"
+        fill="rgba(247, 225, 215, 0.4)"/>
+</svg>
