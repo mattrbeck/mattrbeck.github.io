@@ -363,6 +363,12 @@ body {
   font-weight: 600;
 }
 
+.projects-inner img {
+  /* fill: #4A5759; */
+  /* https://codepen.io/sosuke/pen/Pjoqqp */
+  filter: invert(31%) sepia(8%) saturate(892%) hue-rotate(142deg) brightness(93%) contrast(89%);
+}
+
 .footer {
   width: 100%;
   position: relative;
