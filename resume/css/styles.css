@@ -11,7 +11,7 @@ html, body, div, h1, h2, h3, p, i, b, a {
 }
 
 body {
-    background: #EEF2F5;
+    background: #DEDBD2;
 }
 
 .resume {
@@ -35,7 +35,7 @@ h2, h3, p, i, b, span, a {
 
 a, a:visited {
     text-decoration: none;
-    color: #2A5DB0;
+    color: #4A5759;
 }
 
 hr {
@@ -109,7 +109,7 @@ hr {
     top: 0;
     padding: 0 7px;
     letter-spacing: 0.5px;
-    background-color: #4285f4;
+    background-color: #8FA892;
     cursor: pointer;
     border-radius: 2px;
     color: #FFFFFF;
