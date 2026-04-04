@@ -1,153 +1,171 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <title>Matthew Beck</title>
     <meta
       name="description"
-      content="Hi, I'm Matt Beck (Berry). I graduated Northeastern University in 2020 and currently work as a software engineer. Come check out my website."
+      content="I'm a software developer with a passion for programming languages, compilers, and emulation. Check out my site."
     />
     <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <meta name="theme-color" content="#4957B8" />
+    <meta
+      name="theme-color"
+      content="#f9f9ff"
+      media="(prefers-color-scheme: light)"
+    />
+    <meta
+      name="theme-color"
+      content="#111116"
+      media="(prefers-color-scheme: dark)"
+    />
 
+    <link rel="stylesheet" type="text/css" href="/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="/css/defaults.css" />
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
-    <link rel="apple-touch-icon" href="img/apple-icon.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      href="/img/favicon/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link rel="icon" type="image/svg+xml" href="/img/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/img/favicon/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/img/favicon/apple-touch-icon.png"
+    />
+    <meta name="apple-mobile-web-app-title" content="mattrb.com" />
+    <link rel="manifest" href="/img/favicon/site.webmanifest" />
   </head>
   <body>
-    <div class="container">
-      <div class="slide-1">
-        <div class="header">
-          <div class="header-inner">
-            <a class="name" href="/">
-              <span class="logo">
-                <img src="img/logo.svg" alt="M logo" />
-              </span>
-              <div class="logo-text">
-                <span class="logo-name">Matthew Beck</span>
-                <span class="logo-description">Software Developer</span>
-              </div>
-            </a>
-            <div class="social">
-              <ul class="social-links">
-                <li title="Resume">
-                  <a class="resume-logo" href="resume">
-                    <span>
-                      <img
-                        height="20px"
-                        src="img/social/resume.svg"
-                        alt="resume icon"
-                      />
-                    </span>
-                  </a>
-                </li>
-                <li title="GitHub">
-                  <a class="gh-logo" href="https://github.com/mattrbeck">
-                    <span>
-                      <img
-                        height="20px"
-                        src="img/social/github.svg"
-                        alt="github icon"
-                      />
-                    </span>
-                  </a>
-                </li>
-                <li title="Twitter">
-                  <a class="tw-logo" href="https://twitter.com/mattrbeck">
-                    <span>
-                      <img
-                        height="20px"
-                        src="img/social/twitter.svg"
-                        alt="twitter icon"
-                      />
-                    </span>
-                  </a>
-                </li>
-                <li title="Keybase">
-                  <a class="kb-logo" href="https://keybase.io/mattrb">
-                    <span>
-                      <img
-                        height="20px"
-                        src="img/social/keybase.svg"
-                        alt="keybase icon"
-                      />
-                    </span>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
+    <div class="main-content">
+      <div class="personal-info">
+        <img
+          class="profile-pic"
+          src="img/profile_pic.avif"
+          fetchpriority="high"
+          loading="eager"
+          alt="profile picture of Matthew Beck"
+        />
+        <div class="name-and-title">
+          <p class="name">Matthew Beck</p>
+          <p class="title">Software Developer</p>
         </div>
-        <div class="projects">
-          <div>
-            <h4>Some Stuff I've Done</h4>
-            <div class="projects-inner">
-              <div class="skinstats">
-                <img
-                  height="50px"
-                  width="56px"
-                  src="img/projects/csgo.svg"
-                  alt="karambit knife"
-                />
-                <br />
-                <br />
-                <h5>CSGO Skin Stats</h5>
-                <br />
-                <p>
-                  Built a website to cleanly and efficiently display any CSGO
-                  players&#39; public inventory.
-                </p>
-                <br />
-                <a href="https://skinstats.app">skinstats.app</a>
-              </div>
-              <div class="crab">
-                <img
-                  height="50px"
-                  width="135px"
-                  src="img/projects/crab.svg"
-                  alt="the word crab"
-                />
-                <br />
-                <br />
-                <h5>crab</h5>
-                <br />
-                <p>
-                  Developing an accurate, maintainable Game Boy Advance emulator
-                  in the Crystal programming language.
-                </p>
-                <br />
-                <a href="https://github.com/mattrbeck/crab"
-                  >github.com/mattrbeck/crab</a
-                >
-              </div>
-              <div class="neu">
-                <img
-                  height="50px"
-                  width="44px"
-                  src="img/projects/neu.svg"
-                  alt="paw print"
-                />
-                <br />
-                <br />
-                <h5>Northeastern University</h5>
-                <br />
-                <p>
-                  Graduated with a BS in computer science from Northeastern
-                  University in Boston, Massachussetts.
-                </p>
-                <br />
-                <a href="https://www.northeastern.edu">northeastern.edu</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="footer">
-          <div class="footer-text">
-            <p>Last updated:</p>
-            <p>June, 2025</p>
-          </div>
-        </div>
+      </div>
+      <div class="links">
+        <a href="about">About Me</a>
+        <a href="projects">Projects</a>
+        <a href="resume">Resume</a>
+      </div>
+      <div class="socials">
+        <a href="https://github.com/mattrbeck">
+          <svg
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <title>GitHub</title>
+            <path
+              d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+            />
+          </svg>
+          <span>mattrbeck</span>
+        </a>
+        <a href="https://bsky.app/profile/mattrb.com">
+          <svg
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <title>Bluesky</title>
+            <path
+              d="M5.202 2.857C7.954 4.922 10.913 9.11 12 11.358c1.087-2.247 4.046-6.436 6.798-8.501C20.783 1.366 24 .213 24 3.883c0 .732-.42 6.156-.667 7.037-.856 3.061-3.978 3.842-6.755 3.37 4.854.826 6.089 3.562 3.422 6.299-5.065 5.196-7.28-1.304-7.847-2.97-.104-.305-.152-.448-.153-.327 0-.121-.05.022-.153.327-.568 1.666-2.782 8.166-7.847 2.97-2.667-2.737-1.432-5.473 3.422-6.3-2.777.473-5.899-.308-6.755-3.369C.42 10.04 0 4.615 0 3.883c0-3.67 3.217-2.517 5.202-1.026"
+            />
+          </svg>
+          <span>mattrb.com</span>
+        </a>
+        <a href="https://x.com/mattrbeck">
+          <svg
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            stroke="currentColor"
+            stroke-width="1"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <title>X</title>
+            <path
+              d="M14.234 10.162 22.977 0h-2.072l-7.591 8.824L7.251 0H.258l9.168 13.343L.258 24H2.33l8.016-9.318L16.749 24h6.993zm-2.837 3.299-.929-1.329L3.076 1.56h3.182l5.965 8.532.929 1.329 7.754 11.09h-3.182z"
+            />
+          </svg>
+          <span>mattrbeck</span>
+        </a>
+        <a href="https://www.linkedin.com/in/mattrb-/">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 32 32"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <title>LinkedIn</title>
+            <path
+              d="M26.111,3H5.889c-1.595,0-2.889,1.293-2.889,2.889V26.111c0,1.595,1.293,2.889,2.889,2.889H26.111c1.595,0,2.889-1.293,2.889-2.889V5.889c0-1.595-1.293-2.889-2.889-2.889ZM10.861,25.389h-3.877V12.87h3.877v12.519Zm-1.957-14.158c-1.267,0-2.293-1.034-2.293-2.31s1.026-2.31,2.293-2.31,2.292,1.034,2.292,2.31-1.026,2.31-2.292,2.31Zm16.485,14.158h-3.858v-6.571c0-1.802-.685-2.809-2.111-2.809-1.551,0-2.362,1.048-2.362,2.809v6.571h-3.718V12.87h3.718v1.686s1.118-2.069,3.775-2.069,4.556,1.621,4.556,4.975v7.926Z"
+              fill-rule="evenodd"
+            ></path>
+          </svg>
+          <span>mattrb-</span>
+        </a>
+        <a href="https://keybase.io/mattrb">
+          <svg
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            stroke="currentColor"
+            stroke-width="1"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <title>Keybase</title>
+            <path
+              d="M10.445 21.372a.953.953 0 1 1-.955-.954c.524 0 .951.43.951.955m5.923-.001a.953.953 0 1 1-.958-.954c.526 0 .954.43.954.955m4.544-9.16l-.156-.204c-.046-.06-.096-.116-.143-.175-.045-.06-.094-.113-.141-.169-.104-.12-.21-.239-.32-.359l-.075-.08-.091-.099-.135-.13c-.015-.019-.032-.035-.05-.054a10.87 10.87 0 0 0-3.955-2.504l-.23-.078.035-.083a4.109 4.109 0 0 0-.12-3.255 4.11 4.11 0 0 0-2.438-2.16c-.656-.216-1.23-.319-1.712-.305-.033-.105-.1-.577.496-1.848L10.662 0l-.287.399c-.33.455-.648.895-.945 1.328a1.857 1.857 0 0 0-1.245-.58L6.79 1.061h-.012c-.033-.003-.07-.003-.104-.003-.99 0-1.81.771-1.87 1.755l-.088 1.402v.003a1.876 1.876 0 0 0 1.755 1.98l1.002.06c-.065.84.073 1.62.405 2.306a11.28 11.28 0 0 0-3.66 2.484C.912 14.392.912 18.052.912 20.995v1.775l1.305-1.387c.266.93.652 1.807 1.145 2.615H5.06a9.197 9.197 0 0 1-1.68-3.848l1.913-2.03-.985 3.09 1.74-1.267c3.075-2.234 6.745-2.75 10.91-1.53 1.806.533 3.56.04 4.474-1.256l.104-.165c.09.498.14.998.14 1.496 0 1.563-.254 3.687-1.38 5.512h1.612c.776-1.563 1.181-3.432 1.181-5.512-.001-2.2-.786-4.421-2.184-6.274zM8.894 6.192c.122-1.002.577-1.949 1.23-2.97a1.36 1.36 0 0 0 1.283.749c.216-.008.604.025 1.233.232a2.706 2.706 0 0 1 1.608 1.425c.322.681.349 1.442.079 2.15a2.69 2.69 0 0 1-.806 1.108l-.408-.502-.002-.003a1.468 1.468 0 0 0-2.06-.205c-.334.27-.514.66-.534 1.058-1.2-.54-1.8-1.643-1.628-3.04zm4.304 5.11l-.52.425a.228.228 0 0 1-.323-.032l-.11-.135a.238.238 0 0 1 .034-.334l.51-.42-1.056-1.299a.307.307 0 0 1 .044-.436.303.303 0 0 1 .435.041l2.963 3.646a.309.309 0 0 1-.168.499.315.315 0 0 1-.31-.104l-.295-.365-1.045.854a.244.244 0 0 1-.154.055.237.237 0 0 1-.186-.09l-.477-.58a.24.24 0 0 1 .035-.335l1.05-.858-.425-.533zM7.752 4.866l-1.196-.075a.463.463 0 0 1-.435-.488l.09-1.4a.462.462 0 0 1 .461-.437h.024l1.401.091a.459.459 0 0 1 .433.488l-.007.101a9.27 9.27 0 0 0-.773 1.72zm12.525 11.482c-.565.805-1.687 1.08-2.924.718-3.886-1.141-7.397-.903-10.469.7l1.636-5.122-5.29 5.609c.098-3.762 2.452-6.967 5.757-8.312.471.373 1.034.66 1.673.841.16.044.322.074.48.102a1.41 1.41 0 0 0 .21 1.408l.075.09c-.172.45-.105.975.221 1.374l.476.582a1.39 1.39 0 0 0 1.079.513c.32 0 .635-.111.886-.314l.285-.232c.174.074.367.113.566.113a1.45 1.45 0 0 0 .928-.326c.623-.51.72-1.435.209-2.06l-1.67-2.057a4.07 4.07 0 0 0 .408-.38c.135.036.27.077.4.12.266.096.533.197.795.314a9.55 9.55 0 0 1 2.77 1.897c.03.03.06.055.086.083l.17.176c.038.039.076.079.11.12.08.085.16.175.24.267l.126.15c.045.053.086.104.13.16l.114.15c.04.05.079.102.117.154.838 1.149.987 2.329.404 3.157v.005zM7.718 4.115l-.835-.05.053-.836.834.051z"
+            />
+          </svg>
+          <span>mattrb</span>
+        </a>
+        <a
+          href="mailto:&#x6d;&#x65;&#x40;&#x6d;&#x61;&#x74;&#x74;&#x72;&#x62;&#x2e;&#x63;&#x6f;&#x6d;"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            fill="none"
+          >
+            <title>Email</title>
+            <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+          </svg>
+          <span>me@<span style="display: none">spam.</span>mattrb.com</span>
+        </a>
       </div>
     </div>
   </body>

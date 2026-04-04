@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <title>Matthew Beck &gt; Projects</title>
+    <meta name="description" content="Come check out some of my projects." />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta
+      name="theme-color"
+      content="#f9f9ff"
+      media="(prefers-color-scheme: light)"
+    />
+    <meta
+      name="theme-color"
+      content="#111116"
+      media="(prefers-color-scheme: dark)"
+    />
+
+    <link rel="stylesheet" type="text/css" href="/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="/css/defaults.css" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      href="/img/favicon/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link rel="icon" type="image/svg+xml" href="/img/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/img/favicon/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/img/favicon/apple-touch-icon.png"
+    />
+    <meta name="apple-mobile-web-app-title" content="mattrb.com" />
+    <link rel="manifest" href="/img/favicon/site.webmanifest" />
+  </head>
+  <body>
+    <div class="main-content">
+      <p class="header">
+        <a href="/" class="name">Matthew Beck</a>
+        <span class="projects">Projects</span>
+      </p>
+      <div class="content">
+        <div class="project">
+          <div class="name-and-title">
+            <h2>dingbat</h2>
+            <p>-</p>
+            <a href="https://gba.mattrb.com">gba.mattrb.com</a>
+          </div>
+          <i class="short-desc">
+            Game Boy, Game Boy Color, and Game Boy Advance emulator.
+          </i>
+          <script>
+            // Allow audio to be toggled on iOS even with the mute switch.
+            if (navigator.audioSession) {
+              navigator.audioSession.type = "playback";
+            }
+          </script>
+          <iframe
+            class="dingbat"
+            src="https://gba.mattrb.com/embed.html?demo&integer-scaling=false"
+            title="Emulator Demo"
+            allow="autoplay *"
+            tabindex="0"
+          ></iframe>
+          <div class="credit">
+            <i>
+              The featured game is a demo of
+              <a href="https://goodboygalaxy.com/">Goodboy Galaxy</a>. Check it
+              out!
+            </i>
+          </div>
+          <p>
+            dingbat is an emulator for the Game Boy, Game Boy Color, and Game
+            Boy Advance. It features a native and a WASM build, pixel-accurate
+            Game Boy rendering, controller support, and much more.
+          </p>
+          <details>
+            <summary>More details</summary>
+            <p>
+              dingbat has evolved many times over the years. What began as a fun
+              way to learn more about the internal workings of emulators and the
+              Crystal programming language became a more elaborate project. It
+              was incredibly entertaining to take deep dives on subtle
+              intricacies of the hardware and watch as each fix would
+              incrementally add support for more games.
+            </p>
+            <p>
+              More recently, I've used this project as a means to experiment
+              with AI-assisted translations of a codebase, porting the project
+              from Crystal to Nim. It's been a little sad to move from crafting
+              this project with lots of care to guiding an LLM through the
+              paces, but it's been super interesting to experiment with the
+              state-of-the-art tooling in this way.
+            </p>
+          </details>
+        </div>
+        <div class="project">
+          <div class="name-and-title">
+            <h2>Skin Stats</h2>
+            <p>-</p>
+            <a href="https://skinstats.app">skinstats.app</a>
+          </div>
+          <i class="short-desc">Insights into CS2 items.</i>
+          <p>
+            Skin Stats is a tool for determining the hidden details about CS2
+            items, helping users set fair prices on the market.
+          </p>
+          <details>
+            <summary>More details</summary>
+            <p>
+              Like many personal projects, Skin Stats began as a way to solve a
+              niche problem and learn something along the way. I hacked together
+              the first iteration of this project in high school, where it was a
+              way to learn about web development. The next iteration a year
+              later was my means of learning Python, and the current iteration
+              was my means of learning C#.
+            </p>
+          </details>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+@view-transition {
+  navigation: auto;
+}
+
+.header {
+  font-size: 1.5em;
+  background-color: var(--background);
+  position: sticky;
+  top: 0;
+
+  span::before {
+    content: " > ";
+  }
+}
+
+.name {
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--primary);
+
+  view-transition-name: name;
+}
+
+.about {
+  view-transition-name: about;
+}
+
+.content p {
+  padding-top: 1em;
+}

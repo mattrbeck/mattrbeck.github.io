@@ -1,0 +1,33 @@
+:root {
+  --background: #f9f9ff;
+  --primary: #141414;
+  --borders: #aaaaaa;
+
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #111116;
+    --primary: #efefef;
+    --borders: #cfcfcf;
+  }
+}
+
+body {
+  color: var(--primary);
+  background-color: var(--background);
+  align-content: center;
+  height: 100dvh;
+}
+
+a {
+  color: var(--primary);
+}
+.main-content {
+  width: min(90%, 400px);
+  margin-inline: auto;
+}
