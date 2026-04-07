@@ -1,191 +1,216 @@
 @font-face {
-    font-family: GoogleSans-Regular;
-    src: url(GoogleSans-Regular.ttf);
+  font-family: GoogleSans-Regular;
+  src: url(GoogleSans-Regular.ttf);
 }
 
-html, body, div, h1, h2, h3, p, i, b, a {
-    margin: 0;
-    padding: 0;
-    font-family: "Times New Roman", Times, serif;
-    line-height: 1.2em;
+html,
+body,
+div,
+h1,
+h2,
+h3,
+p,
+i,
+b,
+a {
+  margin: 0;
+  padding: 0;
+  font-family: "Times New Roman", Times, serif;
+  line-height: 1.2em;
 }
 
 body {
-    background: #EEF2F5;
+  background: #eef2f5;
 }
 
 .resume {
-    background: #FFFFFF;
-    border: transparent solid 0.5in;
-    width: 7.5in;
-    height: 10in;
-    overflow: hidden;
-    margin: 40px auto;
-    outline: 1px solid #CCCCCC;
-    box-shadow: 2px 2px 4px #AAAAAA;
+  background: #ffffff;
+  border: transparent solid 0.5in;
+  width: 7.5in;
+  height: 10in;
+  overflow: hidden;
+  margin: 40px auto;
+  outline: 1px solid #cccccc;
+  box-shadow: 2px 2px 4px #aaaaaa;
 }
 
 h1 {
-    font-size: 14pt;
+  font-size: 14pt;
 }
 
-h2, h3, p, i, b, span, a {
-    font-size: 11pt;
+h2,
+h3,
+p,
+i,
+b,
+span,
+a {
+  font-size: 11pt;
 }
 
-a, a:visited {
-    text-decoration: none;
-    color: #2A5DB0;
+a,
+a:visited {
+  text-decoration: none;
+  color: #2a5db0;
 }
 
 hr {
-    margin-bottom: 0.4em;
+  margin-bottom: 0.4em;
 }
 
 #maiden {
-    font-size: inherit;
+  font-size: inherit;
 }
 
 .right {
-    float: right;
-    font-weight: normal;
+  float: right;
+  font-weight: normal;
 }
 
 .center {
-    text-align: center;
+  text-align: center;
 }
 
-.element, .description, .work, .work > .detail > .points {
-    margin-left: 0.25in; /* Base indent spacing. */
+.element,
+.description,
+.work,
+.work > .detail > .points {
+  margin-left: 0.25in; /* Base indent spacing. */
 }
 
-#languages, #technologies {
-    position: absolute; /* Allow the descriptions to be set to the right. */
+#languages,
+#technologies {
+  position: absolute; /* Allow the descriptions to be set to the right. */
 }
 
 .knowledge .description {
-    margin-left: 1in; /* Set the descriptions to the right of the skill types. */
+  margin-left: 1in; /* Set the descriptions to the right of the skill types. */
 }
 
-.work, .detail {
-    margin-bottom: 0.1in; /* Spacing between each detail block. */
+.work,
+.detail {
+  margin-bottom: 0.1in; /* Spacing between each detail block. */
 }
 
 .detail > .dates {
-    float: right;
+  float: right;
 }
 
 .detail > .points > p {
-    text-indent: -0.1in; /* Dedent the first line to offset bullet point. */
-    padding-left: 0.1in; /* Indent the whole block to realign. */
+  text-indent: -0.1in; /* Dedent the first line to offset bullet point. */
+  padding-left: 0.1in; /* Indent the whole block to realign. */
 }
 
 .detail > .points > p::before {
-    content: "\2022  "; /* Add a bullet point before the item. */
-    opacity: 0.8; /* Reduce the visual weight of the bullet point. */
+  content: "\2022  "; /* Add a bullet point before the item. */
+  opacity: 0.8; /* Reduce the visual weight of the bullet point. */
 }
 
 .work.single > h3 {
-    display: inline;
+  display: inline;
 }
 
 .work.single > h3::after {
-    content: " - ";
-    font-weight: normal;
+  content: " - ";
+  font-weight: normal;
 }
 
 .work.single > .detail {
-    display: inline;
+  display: inline;
 }
 
-.work:not(.single) > .detail, .work:not(.single) > .detail > .points {
-    margin-left: 0.125in; /* Indent detail and its points each only a half-step. */
+.work:not(.single) > .detail,
+.work:not(.single) > .detail > .points {
+  margin-left: 0.125in; /* Indent detail and its points each only a half-step. */
 }
 
 #print-button {
-    position: fixed;
-    margin: 20px;
-    right: 0;
-    top: 0;
-    padding: 0 7px;
-    letter-spacing: 0.5px;
-    background-color: #4285f4;
-    cursor: pointer;
-    border-radius: 2px;
-    color: #FFFFFF;
-    font-size: 13px;
-    height: 30px;
-    text-transform: uppercase;
-    display: inline-flex;
-    align-items: center;
+  position: fixed;
+  margin: 20px;
+  right: 0;
+  top: 0;
+  padding: 0 7px;
+  letter-spacing: 0.5px;
+  background-color: #4285f4;
+  cursor: pointer;
+  border-radius: 2px;
+  color: #ffffff;
+  font-size: 13px;
+  height: 30px;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
 }
 
 #print-button:hover {
-    box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.14),
-                0px 3px 1px -2px rgba(0,0,0,0.12),
-                0px 1px 5px 0px rgba(0,0,0,0.2);
+  box-shadow:
+    0px 2px 2px 0px rgba(0, 0, 0, 0.14),
+    0px 3px 1px -2px rgba(0, 0, 0, 0.12),
+    0px 1px 5px 0px rgba(0, 0, 0, 0.2);
 }
 
 #print-button img {
-    height: 1em;
-    padding-right: 4px;
+  height: 1em;
+  padding-right: 4px;
 }
 
 #print-button p {
-    font-family: GoogleSans-Regular;
-    font-size: 1em;
+  font-family: GoogleSans-Regular;
+  font-size: 1em;
 }
 
 @media screen and (max-width: 8.5in) {
-    body {
-        background: #FFFFFF;
-        padding: 10px;
-    }
+  body {
+    background: #ffffff;
+    padding: 10px;
+  }
 
-    .resume {
-        padding: 0;
-        margin: 0;
-        border: none;
-        box-shadow: none;
-        width: 100%;
-        height: auto;
-        outline: none;
-    }
+  .resume {
+    padding: 0;
+    margin: 0;
+    border: none;
+    box-shadow: none;
+    width: 100%;
+    height: auto;
+    outline: none;
+  }
 
-    .description > p {
-        text-indent: -0.1in; /* Dedent the first line to offset bullet point. */
-        padding-left: 0.1in; /* Indent the whole block to realign. */
-    }
+  .description > p {
+    text-indent: -0.1in; /* Dedent the first line to offset bullet point. */
+    padding-left: 0.1in; /* Indent the whole block to realign. */
+  }
 
-    .description > p::before {
-        content: '\2022  '; /* Add bullet points to remaining descriptions since lines wrap */
-    }
-    
-    #languages, #technologies {
-        position: relative; /* Flow points under titles on mobile. */
-    }
+  .description > p::before {
+    content: "\2022  "; /* Add bullet points to remaining descriptions since lines wrap */
+  }
 
-    .knowledge .description {
-        margin-left: 0.25in; /* To reset the wide margin used on the standard view. */
-    }
+  #languages,
+  #technologies {
+    position: relative; /* Flow points under titles on mobile. */
+  }
 
-    #print-button {
-        display: none;
-    }
+  .knowledge .description {
+    margin-left: 0.25in; /* To reset the wide margin used on the standard view. */
+  }
+
+  #print-button {
+    display: none;
+  }
 }
 
 @media print {
-    @page {
-        margin: 0;
-    }
+  @page {
+    margin: 0;
+  }
 
-    .resume {
-        margin: 0;
-        box-shadow: none;
-        outline: none;
-    }
+  .resume {
+    margin: 0;
+    box-shadow: none;
+    outline: none;
+  }
 
-    #print-button, #maiden {
-        display: none;
-    }
+  #print-button,
+  #maiden {
+    display: none;
+  }
 }
