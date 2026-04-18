@@ -27,7 +27,13 @@ body {
 a {
   color: var(--primary);
 }
+
 .main-content {
   width: min(90%, 400px);
   margin-inline: auto;
+  padding-bottom: 1em;
+}
+
+.header {
+  z-index: 1; /* Keep the sub-page header rendered on top of other view-transition-name elements */
 }
