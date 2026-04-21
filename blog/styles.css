@@ -25,16 +25,21 @@
   view-transition-name: blog;
 }
 
-.title {
-  view-transition-name: title;
-}
+/* Allow any post to adopt the view-transition-name on navigation on desktop or mobile. */
+/* Note this means animations when navigating back don't work. */
+.post:hover,
+.post:focus-within {
+  .title {
+    view-transition-name: title;
+  }
 
-.date {
-  view-transition-name: date;
-}
+  .date {
+    view-transition-name: date;
+  }
 
-.first-paragraph {
-  view-transition-name: first-paragraph;
+  .first-paragraph {
+    view-transition-name: first-paragraph;
+  }
 }
 
 .main-content {
