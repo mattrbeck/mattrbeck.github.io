@@ -2,6 +2,10 @@
   navigation: auto;
 }
 
+.post :not(h1, h2, h3, h4, h5, h6):not(:is(h1, h2, h3, h4, h5, h6) *) {
+  font-family: "Crimson Pro", serif;
+}
+
 .header {
   font-size: 1.5em;
   background-color: var(--background);

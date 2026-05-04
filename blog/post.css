@@ -7,6 +7,10 @@
   --blog-quote: #fff6e5;
 }
 
+.content :not(h1, h2, h3, h4, h5, h6) {
+  font-family: "Crimson Pro", serif;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --blog-aside: #1e1e2a;
@@ -116,11 +120,11 @@
       &::before {
         content: "\201C";
         float: left;
-        font-size: 3.5rem;
+        font-size: 2.5rem;
         line-height: 0.5;
         margin-right: 0.5rem;
         margin-bottom: -1.4rem;
-        margin-top: 1rem;
+        margin-top: 0.5rem;
         font-weight: 300;
       }
     }
