@@ -1,0 +1,43 @@
+# Refreshes js/strava-data.js from the Strava API once a week.
+#
+# Requires three repository secrets (Settings → Secrets and variables → Actions):
+#   STRAVA_CLIENT_ID, STRAVA_CLIENT_SECRET — from https://www.strava.com/settings/api
+#   STRAVA_REFRESH_TOKEN — printed by scripts/fetch-strava.mjs on first (browser) run
+name: Update Strava data
+
+on:
+  schedule:
+    - cron: "17 14 * * 1" # Mondays 14:17 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Fetch latest rides
+        env:
+          STRAVA_CLIENT_ID: ${{ secrets.STRAVA_CLIENT_ID }}
+          STRAVA_CLIENT_SECRET: ${{ secrets.STRAVA_CLIENT_SECRET }}
+          STRAVA_REFRESH_TOKEN: ${{ secrets.STRAVA_REFRESH_TOKEN }}
+        run: node scripts/fetch-strava.mjs
+
+      - name: Commit updated data
+        run: |
+          if git diff --quiet js/strava-data.js index.html; then
+            echo "Rides unchanged; nothing to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add js/strava-data.js index.html
+          git commit -m "Update Strava ride data"
+          git push
