@@ -44,6 +44,10 @@
   details {
     padding-top: 1em;
   }
+
+  summary {
+    cursor: pointer;
+  }
 }
 
 .dingbat {
